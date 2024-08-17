@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    background-color: white;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+    padding: 0 6% 0 7%;
+}
+
+.name a {
+    color: black;
+    text-decoration: none;
+    font-size: 26px !important;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #3d3d3d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: #3d3d3d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.arrow {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888888;
+    font-size: 16px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+body-container {
+    display: flex;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 2;
+    margin-right: 20px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.big-news {
+    margin-bottom: 30px;
+}
+
+.big-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.news-description {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.small-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+
+.small-news-item {
+    width: 48%; /* Keep width to fit two items per row */
+    margin-bottom: 20px; /* Add bottom margin for spacing between rows */
+}
+
+
+.small-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-section {
+    width: 100%;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.contact-form-section {
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    color: #3d3d3d;
+    margin-bottom: 20px;
+}
+
+.contact-info h3,
+.contact-info ul {
+    margin-bottom: 10px;
+    color: #3d3d3d;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info li {
+    padding: 5px 0;
+}
+
+.contact-info {
+    padding: 20px;
+}
+
+
+::placeholder {
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    color: #888888;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 20px;
+    border-radius: 7px;
+    border: none;
+    border: 1px solid #4a4a4a;
+    color: white;
+}
+
+textarea {
+    resize: vertical;
+    font-size: 16px;
+}
+
+
+.submit-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+    font-weight: 600;
+    border-radius: 7px;
+    border-style: none;
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #4a4a4a;
+}
+
+
+footer {
+    color: #3d3d3d;
+    background-color: white;
+    padding: 20px 7%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

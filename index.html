@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpot</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="images/icon.png" type="png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="name"><a href="#profile">BlogSpot.</a></div>
+        <nav class="container">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu <i class="fa-solid fa-caret-down arrow"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Travels</a>
+                        <a href="#">Technology</a>
+                        <a href="#">Business</a>
+                    </div>
+                </li>
+                <li><a href="#work">Bookmarks</a></li>
+                <li><a href="#work">Account</a></li>
+                <li><a href="#contact">Settings</a></li>
+                <li class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div style="height: 120px;"></div>
+    <main class="body-container">
+
+        <p style="margin-left: 7%; font-size: 28px; font-weight: 500;"><i class="fa-solid fa-fire"
+                style="color: rgb(239, 169, 39);"></i> Trending</p>
+        <div style="height: 20px;"></div>
+        <div class="main-content">
+            <div class="big-news">
+                <img src="images/big-image.jpg" alt="Main News Image" class="big-image">
+                <div style="height: 20px;"></div>
+                <p style="font-size: 28px; font-weight: 500;">Python is most loved Programing language</p>
+                <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis eros,
+                    porttitor sed dapibus nec, auctor eu diam. Nullam viverra lacinia tortor, vitae blandit dui cursus
+                    a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer
+                    nec tortor volutpat, ultricies purus nec, finibus justo. Proin in nisi volutpat sem fringilla
+                    feugiat ac in felis. Phasellus a odio posuere, bibendum erat quis, congue diam. Curabitur at posuere
+                    tortor.</p>
+                <div style="height: 20px;"></div>
+                <div style="display: flex; justify-content: start;">
+                    <button
+                        style="padding: 10px 15px; color: white; background-color: #3d3d3d; border-style: none;">Subscribe</button>
+                    <div style="width: 10px;"></div>
+                    <button style="padding: 10px 15px; color: white; background-color: #3d3d3d; border-style: none;"><a
+                            href="" style="text-decoration: none; color: white;">Readmore</a></button>
+                </div>
+            </div>
+            <div style="height: 50px;"></div>
+            <div class="small-news">
+                <div class="small-news-item">
+                    <img src="images/small-1.jpg" alt="Small Image 1" class="small-image">
+                    <div style="height: 20px;"></div>
+                    <p style="font-size: 22px; font-weight: 500;">Rust is getting popular</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis eros, porttitor sed dapibus
+                        nec, auctor eu diam. Nullam viverra lacinia tortor, vitae blandit dui cursus a. Orci varius
+                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer nec tortor
+                        volutpat, ultricies purus nec, finibus justo. Proin in nisi volutpat sem fringilla feugiat ac in
+                        felis. Phasellus a odio posuere, bibendum erat quis, congue diam. Curabitur at posuere tortor.
+                    </p>
+                    <div style="height: 20px;"></div>
+                    <div style="display: flex; justify-content: start;">
+                        <button
+                            style="padding: 10px 15px; color: white; background-color: #3d3d3d; border-style: none;">Subscribe</button>
+                        <div style="width: 10px;"></div>
+                        <button style="padding: 10px 15px; color: white; background-color: #3d3d3d; border-style: none;"
+                            onclick="openPostPage()">Readmore</button>
+
+
+                    </div>
+                </div>
+                <div class="small-news-item">
+                    <img src="images/small-2.jpg" alt="Small Image 2" class="small-image">
+                    <div style="height: 20px;"></div>
+                    <p style="font-size: 22px; font-weight: 500;">What new on React?</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis eros, porttitor sed dapibus
+                        nec, auctor eu diam. Nullam viverra lacinia tortor, vitae blandit dui cursus a. Orci varius
+                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer nec tortor
+                        volutpat, ultricies purus nec, finibus justo. Proin in nisi volutpat sem fringilla feugiat ac in
+                        felis. Phasellus a odio posuere, bibendum erat quis, congue diam. Curabitur at posuere tortor.
+                    </p>
+                    <div style="height: 20px;"></div>
+                    <div style="display: flex; justify-content: start;">
+                        <button
+                            style="padding: 10px 15px; color: white; background-color: #3d3d3d; border-style: none;">Subscribe</button>
+                        <div style="width: 10px;"></div>
+                        <button
+                            style="padding: 10px 15px; color: white; background-color: #3d3d3d; border-style: none;"><a
+                                href="" style="text-decoration: none; color: white;">Readmore</a></button>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 50px;"></div>
+            <div class="small-news-item">
+                <img src="images/small-3.jpg" alt="Small Image 1" class="small-image">
+                <div style="height: 20px;"></div>
+                <p style="font-size: 22px; font-weight: 500;">PHP got an update 😊</p><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis eros, porttitor sed dapibus nec,
+                    auctor eu diam. Nullam viverra lacinia tortor, vitae blandit dui cursus a. Orci varius natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer nec tortor volutpat,
+                    ultricies purus nec, finibus justo. Proin in nisi volutpat sem fringilla feugiat ac in felis.
+                    Phasellus a odio posuere, bibendum erat quis, congue diam. Curabitur at posuere tortor.</p>
+                <div style="height: 20px;"></div>
+                <div style="display: flex; justify-content: start;">
+                    <button
+                        style="padding: 10px 15px; color: white; background-color: #3d3d3d; border-style: none;">Subscribe</button>
+                    <div style="width: 10px;"></div>
+                    <button style="padding: 10px 15px; color: white; background-color: #3d3d3d; border-style: none;"><a
+                            href="" style="text-decoration: none; color: white;">Readmore</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 150px;"></div>
+        <section class="contact-section" id="contact">
+            <div class="contact-form-section">
+                <h2><i class="fa-solid fa-envelope"></i> Contact Me</h2><br>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="query" name="query" rows="5" placeholder="Query" required></textarea>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-info">
+                <br><br><br>
+                <h3>Contact Details</h3>
+                <p>Feel free to reach out via email or phone</p>
+                <ul>
+                    <li>Email: jayanthpaladugu3@gmail.com</li>
+                    <li>Phone: +1234567890</li>
+                </ul>
+                <br><br>
+                <div class="social-media">
+                    <h4>Follow me on</h4><br>
+                    <i class="fa-brands fa-instagram" style="font-size: 24px; cursor: pointer;"></i>&nbsp;
+                    <i class="fa-brands fa-facebook" style="font-size: 24px; cursor: pointer;"></i>&nbsp;
+                    <i class="fa-brands fa-x-twitter" style="font-size: 24px; cursor: pointer;"></i>&nbsp;
+                    <i class="fa-brands fa-linkedin" style="font-size: 24px; cursor: pointer;"></i>&nbsp;
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left" style="text-align: center;">
+                <p>© Copyright Jayanth 2024</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.dropbtn').addEventListener('click', function () {
+            var dropdown = document.querySelector('.dropdown-content');
+            var arrow = document.querySelector('.arrow');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+            arrow.classList.toggle('rotate');
+        });
+
+        window.onclick = function (event) {
+            if (!event.target.closest('.dropdown')) {
+                var dropdown = document.querySelector('.dropdown-content');
+                var arrow = document.querySelector('.arrow');
+                if (dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                    arrow.classList.remove('rotate');
+                }
+            }
+        }
+
+        function openPostPage() {
+            window.location.href = 'post.html';
+        }
+
+    </script>
+</body>
+
+</html>
